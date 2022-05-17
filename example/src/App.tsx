@@ -1,18 +1,21 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-awesome-module';
+import { StyleSheet, View, Text, Alert } from 'react-native';
+import { Button } from 'react-native-awesome-module';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button
+        buttonColor={'blue'}
+        onPress={() => {
+          Alert.alert('Helllo there', 'Cool');
+        }}
+      >
+        <Text>Cool</Text>
+      </Button>
     </View>
   );
 }

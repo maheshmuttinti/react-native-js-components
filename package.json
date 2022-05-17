@@ -143,5 +143,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "expo-linear-gradient": "^11.3.0"
   }
 }
