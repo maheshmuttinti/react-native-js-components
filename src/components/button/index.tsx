@@ -1,21 +1,14 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
+import { GestureResponderEvent, TouchableOpacity } from 'react-native';
 
-export const Base = ({
-  onPress = () => {},
-  disabled = false,
-  buttonStyles = { borderRadius: 5, backgroundColor: 'cyan', padding: 10 },
-  ...props
-}) => {
-  return (
-    <TouchableOpacity
-      style={{
-        ...buttonStyles,
-      }}
-      onPress={() => onPress()}
-      disabled={disabled}
-    >
-      {props.children}
-    </TouchableOpacity>
-  );
+interface Props {
+  onPress?: (event: GestureResponderEvent) => void;
+  disabled?: boolean;
+  style?: object;
+  children?: React.ReactNode | String;
+  hitSlop?: object;
+}
+
+export const Base = (props: Props) => {
+  return <TouchableOpacity {...props}>{props.children}</TouchableOpacity>;
 };
