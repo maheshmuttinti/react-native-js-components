@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  AwesomeModuleExample
+//  reusable-button
 //
 
 import Foundation

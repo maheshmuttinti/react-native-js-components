@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View, Text, Alert, ViewStyle } from 'react-native';
-import { Button } from 'react-native-awesome-module';
+import { Button } from 'reusable-buttons';
 
 const stylesObj = {
   container: {

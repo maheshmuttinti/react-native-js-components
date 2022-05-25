@@ -1,5 +1,5 @@
 {
-  "name": "react-native-awesome-module",
+  "name": "reusable-buttons",
   "version": "0.1.0",
   "description": "sample",
   "main": "lib/commonjs/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-awesome-module.podspec",
+    "reusable-buttons.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -32,17 +32,15 @@
     "bootstrap": "yarn example && yarn && yarn pods"
   },
   "keywords": [
-    "react-native",
-    "ios",
-    "android"
+    "reusable-buttons"
   ],
-  "repository": "https://github.com/maheshmuttinti/react-native-awesome-module",
+  "repository": "https://github.com/maheshmuttinti/reusable-buttons",
   "author": "maheshmuttinti <maheshmuttinti@betalectic.com> (https://github.com/maheshmuttinti)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maheshmuttinti/react-native-awesome-module/issues"
+    "url": "https://github.com/maheshmuttinti/reusable-buttons/issues"
   },
-  "homepage": "https://github.com/maheshmuttinti/react-native-awesome-module#readme",
+  "homepage": "https://github.com/maheshmuttinti/reusable-buttons#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -50,7 +48,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "@release-it/conventional-changelog": "^2.0.0",
-    "@types/jest": "^26.0.0",
+    "@types/jest": "^27.5.1",
     "@types/react": "^16.9.19",
     "@types/react-native": "0.63.40",
     "commitlint": "^11.0.0",

@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "AwesomeModuleExample.app"
-               BlueprintName = "AwesomeModuleExample"
-               ReferencedContainer = "container:AwesomeModuleExample.xcodeproj">
+               BuildableName = "reusable-button.app"
+               BlueprintName = "reusable-button"
+               ReferencedContainer = "container:reusable-button.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AwesomeModuleExample.app"
-            BlueprintName = "AwesomeModuleExample"
-            ReferencedContainer = "container:AwesomeModuleExample.xcodeproj">
+            BuildableName = "reusable-button.app"
+            BlueprintName = "reusable-button"
+            ReferencedContainer = "container:reusable-button.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AwesomeModuleExample.app"
-            BlueprintName = "AwesomeModuleExample"
-            ReferencedContainer = "container:AwesomeModuleExample.xcodeproj">
+            BuildableName = "reusable-button.app"
+            BlueprintName = "reusable-button"
+            ReferencedContainer = "container:reusable-button.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AwesomeModuleExample.app"
-            BlueprintName = "AwesomeModuleExample"
-            ReferencedContainer = "container:AwesomeModuleExample.xcodeproj">
+            BuildableName = "reusable-button.app"
+            BlueprintName = "reusable-button"
+            ReferencedContainer = "container:reusable-button.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
