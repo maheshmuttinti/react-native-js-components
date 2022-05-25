@@ -18,9 +18,9 @@ interface Props {
   outline?: boolean;
 }
 
-// const baseButtonTextStyles = {
-//   textAlign: 'center',
-// };
+const baseButtonTextStyles = {
+  textAlign: 'center',
+};
 
 export const Base = (props: Props) => {
   return (
@@ -49,10 +49,10 @@ export const Base = (props: Props) => {
       > */}
       {typeof props.children === 'string' ? (
         <Text
-        // style={{
-        //   ...baseButtonTextStyles,
-        //    ...props.textStyles,
-        // }}
+          style={{
+            ...baseButtonTextStyles,
+            ...props.textStyles,
+          }}
         >
           {props.children}
         </Text>

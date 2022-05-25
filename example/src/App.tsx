@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View, Alert, ViewStyle } from 'react-native';
+import { View, Alert, ViewStyle } from 'react-native';
 import { Button } from 'reusable-buttons';
 
 const stylesObj = {
