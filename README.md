@@ -1,21 +1,28 @@
-# react-native-awesome-module
+# reusable-buttons
 
 sample
 
 ## Installation
 
+### NPM
+
 ```sh
-npm install react-native-awesome-module
+npm install reusable-buttons
+```
+
+### YARN
+
+```sh
+yarn add reusable-buttons
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "react-native-awesome-module";
-
+import { Button } from 'reusable-buttons';
 // ...
 
-const result = await multiply(3, 7);
+<Button onPress={() => {}}>Click Here</Button>
 ```
 
 ## Contributing
