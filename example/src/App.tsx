@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View, Text, Alert, ViewStyle } from 'react-native';
+import { StyleSheet, View, Alert, ViewStyle } from 'react-native';
 import { Button } from 'reusable-buttons';
 
 const stylesObj = {
@@ -17,9 +17,9 @@ const App: React.FC = () => {
         onPress={() => {
           Alert.alert('Helllo there', 'Cool');
         }}
-        style={styles.buttonStyles}
+        // style={styles.buttonStyles}
       >
-        <Text>{`Click`}</Text>
+        Click here
       </Button>
     </View>
   );
@@ -27,11 +27,6 @@ const App: React.FC = () => {
 
 export default App;
 
-const styles = StyleSheet.create({
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-  buttonStyles: { backgroundColor: 'red' },
-});
+// const styles = StyleSheet.create({
+//   buttonStyles: { backgroundColor: 'blue' },
+// });

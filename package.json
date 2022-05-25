@@ -143,6 +143,9 @@
     ]
   },
   "dependencies": {
-    "expo-linear-gradient": "^11.3.0"
+    "expo-constants": "^13.1.1",
+    "expo-linear-gradient": "^11.3.0",
+    "expo-modules-core": "^0.9.2",
+    "react-native-unimodules": "^0.14.10"
   }
 }
