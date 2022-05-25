@@ -1,6 +1,5 @@
 # reusable-buttons
 
-sample
 
 ## Installation
 
