@@ -1,27 +1,23 @@
 import * as React from 'react';
-import { View, Alert, ViewStyle } from 'react-native';
+import { Alert, Text, TextProps } from 'react-native';
 import { Button } from 'reusable-buttons';
 
-const stylesObj = {
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  } as ViewStyle,
-};
+interface Props extends TextProps {
+  children?: React.ReactNode | String;
+}
 
-const App: React.FC = () => {
+const App: React.FC = (props: Props) => {
   return (
-    <View style={stylesObj.container}>
-      <Button
-        onPress={() => {
-          Alert.alert('Helllo there', 'Cool');
-        }}
-        // style={styles.buttonStyles}
-      >
-        Click here
-      </Button>
-    </View>
+    <Button
+      onPress={() => {
+        Alert.alert('Helllo there', 'Cool');
+      }}
+      colors={['red', 'green']}
+    >
+      <Text
+        {...props}
+      >{`Click here jhsdbfhjd jhdfgjh jsdhfh uhdsfuy uhdsfu`}</Text>
+    </Button>
   );
 };
 

@@ -1,13 +1,19 @@
 import React from 'react';
-import { GestureResponderEvent, TouchableOpacity } from 'react-native';
-import { Text } from 'react-native';
-// import { LinearGradient } from 'expo-linear-gradient';
+import {
+  GestureResponderEvent,
+  TouchableOpacity,
+  Text,
+  TextProps,
+  TouchableOpacityProps,
+} from 'react-native';
+// import { SvgCssUri } from 'react-native-svg';
+import { LinearGradient, LinearGradientProps } from 'expo-linear-gradient';
 
-interface Props {
+interface Props extends LinearGradientProps, TextProps, TouchableOpacityProps {
   onPress?: (event: GestureResponderEvent) => void;
   disabled?: boolean;
   style?: object;
-  children?: React.ReactNode | String;
+  children?: React.ReactElement | String;
   hitSlop?: object;
   textStyles?: object;
   wrapperStyles?: object;
@@ -16,16 +22,22 @@ interface Props {
   gradientStartValues?: object;
   gradientEndValues?: object;
   outline?: boolean;
+  touchStyles?: object;
 }
 
-const baseButtonTextStyles = {
-  textAlign: 'center',
-};
+// const baseButtonTextStyles = {
+//   textAlign: 'center',
+// };
 
-export const Base = (props: Props) => {
+export const Base = (props: Props): JSX.Element => {
   return (
     <TouchableOpacity {...props}>
-      {/* <LinearGradient
+      {/* <SvgCssUri
+        width="100%"
+        height="100%"
+        uri="http://thenewcode.com/assets/svg/accessibility.svg"
+      /> */}
+      <LinearGradient
         colors={['red', 'green']}
         // colors={props?.gradientColors || ['red', 'green']}
         // start={
@@ -46,20 +58,13 @@ export const Base = (props: Props) => {
           paddingHorizontal: props?.outline === true ? 1 : 0,
           ...props?.wrapperStyles,
         }}
-      > */}
-      {typeof props.children === 'string' ? (
-        <Text
-          style={{
-            ...baseButtonTextStyles,
-            ...props.textStyles,
-          }}
-        >
-          {props.children}
-        </Text>
-      ) : (
-        props.children
-      )}
-      {/* </LinearGradient> */}
+      >
+        {typeof props.children === 'string' ? (
+          <Text {...props}>{props.children}</Text>
+        ) : (
+          props.children
+        )}
+      </LinearGradient>
     </TouchableOpacity>
   );
 };
